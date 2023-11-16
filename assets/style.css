@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100vh;
+}
+.game-box{
+    background-image: linear-gradient(rgb(27, 64, 78),rgb(101, 51, 182));
+    overflow-y: hidden;
+}
+.pcx{
+    transform: translateY(-150%)  ;
+    transition: all .5s;
+    width: 240px!important;
+    height: 200px!important;
+    
+}
+img{
+    width: 90%!important;
+    height: 90%!important;
+}
+.winner{
+    height: 40px!important;
+border-radius: 10px;
+transform: translateY(240%) ;
+transition: all .7s;
+background-color: rgb(151, 167, 65);
+
+}
+
+.gamer{
+    cursor: pointer;
+    border: .5px solid rgba(255, 255, 255,.4)!important ;
+}
+.ring{
+    animation: ring .8s linear 1;
+   
+}
+
+@keyframes ring {
+    0%{
+        box-shadow: 0;
+    }
+    30%{
+        box-shadow: 0 0 10px 10px rgb(255, 255, 255,.4);
+    }
+    60%{
+        box-shadow: 0 0 10px 15px rgba(255, 255, 255,.2);  
+    }
+    100%{
+       box-shadow: 0;
+    }
+}
+.animation{
+    animation: shine 1s linear 1;
+}
+@keyframes shine {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 10px  20px  rgb(126, 207, 126);
+        background-color: rgb(126, 207, 126);
+
+        
+    }
+    100%{
+        box-shadow: 0;
+        background-color: transparent;
+    }
+    
+}
+.animation2{
+    animation: shines 1s linear 1;
+}
+@keyframes shines {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 10px  20px  rgb(211, 64, 38);
+        background-color: rgb(211, 64, 38);
+
+        
+    }
+    100%{
+        box-shadow: 0;
+        background-color: transparent;
+    }
+    
+}
+.animation3{
+    animation: shiness 1s linear 1;
+}
+@keyframes shiness {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 10px  20px  rgb(160, 152, 46);
+        background-color: rgb(160, 152, 46);
+
+        
+    }
+    100%{
+        box-shadow: 0;
+        background-color: transparent;
+    }
+    
+}
